@@ -24,7 +24,7 @@ services:
     restart: always
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro 
-      - ./static:/app/static:ro
+      - ./app/static:/app/static:ro
       - ./media:/app/media:ro
     ports:
       - 80:80
